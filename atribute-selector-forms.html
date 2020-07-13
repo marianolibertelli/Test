@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>Form</title>
+    
+    <style>
+        
+        input[type="text"], {font-family: cursive;  }
+         
+                   
+        textarea {height: 200px;
+            resize: none;  }
+    
+        
+        input: focus {border-bottom: 3px solid #888;  }
+        
+                
+        label {display: inline-block; 
+               width: 150px; }
+              
+        label [for="msg"] 
+        {vertical-align: top; 
+               width: 150px; }
+
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <h1>Form</h1>
+
+    <form action="">
+
+        <label>First Name:</label><br>
+        <input type="text" name="fn" required placeholder="Please enter your first name"><br><br>
+
+
+        <input type="text" name="ln" required placeholder="Last name"><br><br>
+
+        <label>Your Message:</label><br>
+        <textarea name="msg" required></textarea><br><br>
+
+        <!-- Add 2 radio buttons (male, female) -->
+        <input id="female" type="radio" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input id="male" type="radio" name="gender" value="male" checked>
+        <label for="male">Male</label><br><br>
+
+        <!-- Add a checkbox for a newsletter subscription -->
+
+        <!-- Add a dropdown list with the select element (like a list of countries) -->
+
+
+        <!-- Add some more input fields with the types date, color, file, email and password (just for testing input types, no label is needed) -->
+
+        <!-- Add a submit button to the form (input type="submit") -->
+        <input type="date"><br><br>
+        <input type="email" required><br><br>
+
+        <input type="submit" value="SEND">
+
+
+    </form>
+
+</body></html>
